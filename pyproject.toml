@@ -33,6 +33,7 @@ typing-extensions = "==4.12.2"
 urllib3 = "==2.2.3"
 yadisk = "==3.1.0"
 yarl = "==1.16.0"
+pillow = "11.1.0"
 
 [tool.poetry.group.dev.dependencies]
 setuptools = "^70.0.0"
