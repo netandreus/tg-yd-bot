@@ -127,7 +127,7 @@ docker compose up
 Systemd Unit-file located at ```tg-yd-bot.service```. Copy it to the ```/etc/systemd/system``` and run:
 ```bash
 sudo systemctl daemon-reload
-sudo systemctl enabled tg-yd-bot
+sudo systemctl enable tg-yd-bot
 sudo systemctl start tg-yd-bot
 ```
 
