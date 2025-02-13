@@ -8,13 +8,13 @@ yadisk_instance = yadisk.YaDisk(token=YANDEX_TOKEN)
 
 def upload(file_stream, file_id) -> bool:
     """
-    Загружает файл на Яндекс.Диск.
+    Uploads a file to Yandex.Disk.
 
-    :param file_stream: Поток байтов, содержащий файл.
+    :param file_stream: Byte stream containing the file.
     :type file_stream: BytesIO
-    :param file_id: Уникальный идентификатор файла.
+    :param file_id: Unique file identifier.
     :type file_id: str
-    :return: True, если загрузка прошла успешно, иначе False.
+    :return: True if upload was successful, False otherwise.
     :rtype: bool
     """
 
@@ -23,5 +23,5 @@ def upload(file_stream, file_id) -> bool:
         return True
 
     except Exception as e:
-        print(f"Ошибка загрузки. {e}")
+        print(f"Upload error. {e}")
         return False

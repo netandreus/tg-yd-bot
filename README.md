@@ -131,6 +131,15 @@ sudo systemctl enable tg-yd-bot
 sudo systemctl start tg-yd-bot
 ```
 
+### Using for VSCode
+For the best experience, you can use VSCode with Python extension. In this way please install extensionms:
+
+```bash
+pip install aiogram
+pip install python-dotenv
+pip install yadisk
+```
+
 ### Configure virtualenv in PyCharm
 
 ![PyCharm and venv](./assets/doc/pycharm_add_venv.png)

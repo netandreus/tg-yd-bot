@@ -12,11 +12,11 @@ router = Router(name="photo")
 @router.message(F.content_type == ContentType.PHOTO)
 async def handle_photo(message: Message, bot: Bot):
     """
-    Обрабатывает сообщения с фотографиями, загружает их на Яндекс Диск.
+    Handles photo messages, uploads them to Yandex Disk.
 
-    :param message: Объект сообщения, содержащий фотографию.
+    :param message: Message object containing the photo.
     :type message: Message
-    :param bot: Объект бота для взаимодействия с Telegram API.
+    :param bot: Bot object for interacting with Telegram API.
     :type bot: Bot
     """
 

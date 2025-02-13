@@ -10,11 +10,11 @@ router = Router(name="document")
 @router.message(F.content_type == ContentType.DOCUMENT)
 async def handle_document(message: Message, bot: Bot):
     """
-    Обрабатывает сообщения с документами, загружает их на Яндекс Диск.
+    Handles document messages, uploads them to Yandex Disk.
 
-    :param message: Объект сообщения, содержащий документ.
+    :param message: Message object containing the document.
     :type message: Message
-    :param bot: Объект бота для взаимодействия с Telegram API.
+    :param bot: Bot object for interacting with Telegram API.
     :type bot: Bot
     """
 

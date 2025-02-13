@@ -5,13 +5,13 @@ from app.config import ALLOWED_USERS
 
 class AccessMiddleware(BaseMiddleware):
     """
-    Проверяет, есть ли у пользователя доступ к функционалу бота.
-    Если пользователь не в списке разрешенных, отправляет сообщение об отсутствии доступа.
+    Checks if the user has access to the bot's functionality.
+    If the user is not in the allowed users list, sends an access denied message.
     """
 
     async def __call__(self, handler, event, data):
         """
-        Вызывается для каждого события, проверяет доступ пользователя.
+        Called for each event, checks user access.
         """
 
         user_id = event.from_user.id

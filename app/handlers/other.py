@@ -6,5 +6,5 @@ router = Router(name="other")
 async def handle_other_messages(message: types.Message):
     user_name = message.from_user.full_name
     await message.answer(f"{user_name}❗\n"
-                         f"\nЯ умею сохранять фото и видео📷.\n"
-                         f"\nПрикрепи в чат ❗фото/видео/документ❗ или перешли их мне.")
+                         f"\nI can save photos and videos📷.\n"
+                         f"\nAttach ❗photo/video/document❗ to the chat or forward them to me.")
